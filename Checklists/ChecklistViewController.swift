@@ -93,16 +93,16 @@ class ChecklistViewController: UITableViewController {
     }
     
     // MARK: - Actions
-    @IBAction func addItem() {
-        let newRowIndex = items.count
-        
-        let item = ChecklistItem()
-        item.text = "I am a new row"
-        item.checked = true
-        items.append(item)
-        
-        let indexPath = IndexPath(row: newRowIndex, section: 0)
-        let indexPaths = [indexPath]
-        tableView.insertRows(at: indexPaths, with: .automatic)
-    }
+//    @IBAction func addItem() {
+//        let newRowIndex = items.count
+//        
+//        let item = ChecklistItem()
+//        item.text = "I am a new row"
+//        item.checked = true
+//        items.append(item)
+//        
+//        let indexPath = IndexPath(row: newRowIndex, section: 0)
+//        let indexPaths = [indexPath]
+//        tableView.insertRows(at: indexPaths, with: .automatic)
+//    }
 }

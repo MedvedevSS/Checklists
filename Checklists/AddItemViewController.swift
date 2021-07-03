@@ -3,11 +3,19 @@
 //  Checklists
 //
 //  Created by Sergey Medvedev on 02.07.2021.
-//
+//AddItemViewController
 
 import UIKit
 
+protocol AddItemViewControllerDelegate: AnyObject {
+    
+    func addItemViewControllerDidCancel(_ controller: AddItemViewController)
+    func addItemViewController(_ controller: AddItemViewController, didFinishAdding item: ChecklistItem)
+}
+
 class AddItemViewController: UITableViewController, UITextFieldDelegate {
+    
+    weak var delegate: AddItemViewControllerDelegate?
     
     @IBOutlet var textField: UITextField!
     @IBOutlet var doneBarButton: UIBarButtonItem!
@@ -25,13 +33,14 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     
     // MARK: - Actions
     @IBAction func cancel() {
-        navigationController?.popViewController(animated: true)
+        delegate?.addItemViewControllerDidCancel(self)
     }
     
     @IBAction func done() {
-        print("Contents of the text field: \(textField.text!)")
+        let item = ChecklistItem()
+        item.text = textField.text!
         
-        navigationController?.popViewController(animated: true)
+        delegate?.addItemViewController(self, didFinishAdding: item)
     }
     // MARK: - Table View Delegates
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
