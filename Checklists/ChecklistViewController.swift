@@ -62,7 +62,12 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         
         let item5 = ChecklistItem()
         item5.text = "Eat ice cream"
+//        items.append(item5)
+        
         items.append(item5)
+        
+        print("Documents folder is \(documentsDirectory())")
+        print("Data file path is \(dataFilePath())")
     }
 
    // MARK: - Table View Data Source
@@ -97,6 +102,15 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     func configureText(for cell: UITableViewCell, with item: ChecklistItem) {
         let label = cell.viewWithTag(1000) as! UILabel
         label.text = item.text
+    }
+    
+    func documentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    func dataFilePath() -> URL {
+        return documentsDirectory().appendingPathComponent("Checklists.plist")
     }
 
     
