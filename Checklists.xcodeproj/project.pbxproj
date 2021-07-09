@@ -15,6 +15,7 @@
 		DC469BA12681C606007BDDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC469B9F2681C606007BDDAD /* Main.storyboard */; };
 		DC469BA32681C607007BDDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC469BA22681C607007BDDAD /* Assets.xcassets */; };
 		DC469BA62681C607007BDDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC469BA42681C607007BDDAD /* LaunchScreen.storyboard */; };
+		DCA169742698405B00179A20 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA169732698405B00179A20 /* AllListsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DC469BA22681C607007BDDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC469BA52681C607007BDDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC469BA72681C607007BDDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA169732698405B00179A20 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				DC3E749E268F0EC7004DBCFC /* ItemDetailViewController.swift */,
 				DC2BDBC1268DB146002A3244 /* ChecklistItem.swift */,
 				DC469B9D2681C606007BDDAD /* ChecklistViewController.swift */,
+				DCA169732698405B00179A20 /* AllListsViewController.swift */,
 				DC469B9F2681C606007BDDAD /* Main.storyboard */,
 				DC469BA22681C607007BDDAD /* Assets.xcassets */,
 				DC469BA42681C607007BDDAD /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				DC3E749F268F0EC7004DBCFC /* ItemDetailViewController.swift in Sources */,
 				DC469B9E2681C606007BDDAD /* ChecklistViewController.swift in Sources */,
+				DCA169742698405B00179A20 /* AllListsViewController.swift in Sources */,
 				DC469B9A2681C606007BDDAD /* AppDelegate.swift in Sources */,
 				DC469B9C2681C606007BDDAD /* SceneDelegate.swift in Sources */,
 				DC2BDBC2268DB146002A3244 /* ChecklistItem.swift in Sources */,
