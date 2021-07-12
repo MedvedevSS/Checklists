@@ -9,6 +9,9 @@ import UIKit
 
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
     
+    var items = [ChecklistItem]()
+    var checklist: Checklist!
+    
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController) {
         navigationController?.popViewController(animated: true)
     }
@@ -38,14 +41,13 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         saveChecklistItems()
     }
     
-    
-    var items = [ChecklistItem]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.largeTitleDisplayMode = .never
         loadChecklistItems()
+        title = checklist.name
+        
     }
 
    // MARK: - Table View Data Source

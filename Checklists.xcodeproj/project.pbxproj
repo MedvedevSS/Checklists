@@ -16,6 +16,8 @@
 		DC469BA32681C607007BDDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC469BA22681C607007BDDAD /* Assets.xcassets */; };
 		DC469BA62681C607007BDDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC469BA42681C607007BDDAD /* LaunchScreen.storyboard */; };
 		DCA169742698405B00179A20 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA169732698405B00179A20 /* AllListsViewController.swift */; };
+		DCA25D09269C8174009BC079 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA25D08269C8174009BC079 /* Checklist.swift */; };
+		DCA25D0B269CB0C7009BC079 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA25D0A269CB0C7009BC079 /* ListDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		DC469BA52681C607007BDDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC469BA72681C607007BDDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA169732698405B00179A20 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		DCA25D08269C8174009BC079 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		DCA25D0A269CB0C7009BC079 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				DC2BDBC1268DB146002A3244 /* ChecklistItem.swift */,
 				DC469B9D2681C606007BDDAD /* ChecklistViewController.swift */,
 				DCA169732698405B00179A20 /* AllListsViewController.swift */,
+				DCA25D0A269CB0C7009BC079 /* ListDetailViewController.swift */,
+				DCA25D08269C8174009BC079 /* Checklist.swift */,
 				DC469B9F2681C606007BDDAD /* Main.storyboard */,
 				DC469BA22681C607007BDDAD /* Assets.xcassets */,
 				DC469BA42681C607007BDDAD /* LaunchScreen.storyboard */,
@@ -152,6 +158,8 @@
 				DC469B9A2681C606007BDDAD /* AppDelegate.swift in Sources */,
 				DC469B9C2681C606007BDDAD /* SceneDelegate.swift in Sources */,
 				DC2BDBC2268DB146002A3244 /* ChecklistItem.swift in Sources */,
+				DCA25D09269C8174009BC079 /* Checklist.swift in Sources */,
+				DCA25D0B269CB0C7009BC079 /* ListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
