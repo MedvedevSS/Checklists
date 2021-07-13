@@ -23,11 +23,12 @@
                     <navigationItem key="navigationItem" title="Checklists" id="MqQ-Nf-v1W"/>
                     <connections>
                         <segue destination="38l-8l-wjp" kind="show" identifier="ShowChecklist" id="6v5-PN-K3E"/>
+                        <segue destination="7ZP-qi-Xgi" kind="show" id="EH4-ud-zDB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDf-M8-Ble" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="-730"/>
+            <point key="canvasLocation" x="303" y="-36"/>
         </scene>
         <!--Checklist-->
         <scene sceneID="RTT-8c-LIO">
@@ -39,14 +40,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="hOh-Li-TaK">
-                                <rect key="frame" x="0.0" y="24.5" width="375" height="42.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOh-Li-TaK" id="xhn-hU-YdW">
-                                    <rect key="frame" x="0.0" y="0.0" width="321" height="42.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDs-Z4-Cif">
-                                            <rect key="frame" x="16" y="8" width="14" height="27"/>
+                                            <rect key="frame" x="16" y="8" width="14" height="27.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="14" id="XpJ-6w-C3j"/>
                                             </constraints>
@@ -55,7 +56,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-7Y-wcu">
-                                            <rect key="frame" x="38" y="13" width="270" height="21"/>
+                                            <rect key="frame" x="38" y="13" width="270" height="21.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="270" id="oER-cz-QKD"/>
                                             </constraints>
@@ -95,6 +96,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgJ-dy-FhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1064.8" y="-35.532233883058474"/>
+        </scene>
+        <!--Add Checklist-->
+        <scene sceneID="luf-VC-W5t">
+            <objects>
+                <tableViewController id="7ZP-qi-Xgi" customClass="ListDetailViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lNo-Dz-t7i" userLabel="Add Checklist">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pGS-vc-XzK">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pGS-vc-XzK" id="ASu-Sc-PEH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7ZP-qi-Xgi" id="X1B-Yy-54p"/>
+                            <outlet property="delegate" destination="7ZP-qi-Xgi" id="7yR-Rr-AZa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Checklist" largeTitleDisplayMode="never" id="vdH-YS-OrZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eic-QJ-1Cp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="689"/>
         </scene>
         <!--Add Item-->
         <scene sceneID="4oZ-aN-Dwd">
@@ -177,7 +207,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29B-gZ-9Ua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.59999999999999" y="-35.532233883058474"/>
+            <point key="canvasLocation" x="-481" y="-36"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
