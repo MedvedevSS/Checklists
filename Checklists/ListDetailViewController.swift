@@ -14,7 +14,7 @@ protocol ListDetailViewControllerDelegate: AnyObject {
     
     func listDetailViewController(_ controller: ListDetailViewController, didFinishAdding checklist: Checklist)
     
-    func listDetailViewController(_ controller: ListDetailViewController, didFinishEditing: Checklist)
+    func listDetailViewController(_ controller: ListDetailViewController, didFinishEditing checklist: Checklist)
     
 }
 
