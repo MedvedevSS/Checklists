@@ -46,14 +46,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="hOh-Li-TaK">
-                                <rect key="frame" x="0.0" y="24.5" width="375" height="42.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOh-Li-TaK" id="xhn-hU-YdW">
-                                    <rect key="frame" x="0.0" y="0.0" width="321" height="42.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDs-Z4-Cif">
-                                            <rect key="frame" x="16" y="8" width="14" height="27"/>
+                                            <rect key="frame" x="16" y="8" width="14" height="27.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="14" id="XpJ-6w-C3j"/>
                                             </constraints>
@@ -62,7 +62,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-7Y-wcu">
-                                            <rect key="frame" x="38" y="13" width="270" height="21"/>
+                                            <rect key="frame" x="38" y="13" width="270" height="21.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="270" id="oER-cz-QKD"/>
                                             </constraints>
@@ -153,7 +153,7 @@
                                 <action selector="cancel" destination="7ZP-qi-Xgi" id="qAQ-xL-hKB"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="gyT-Oq-jZj">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="plain" systemItem="done" id="gyT-Oq-jZj">
                             <connections>
                                 <action selector="done" destination="7ZP-qi-Xgi" id="P0k-xS-G40"/>
                             </connections>
