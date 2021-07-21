@@ -49,6 +49,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC12D53726A867340012460F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC469BA22681C607007BDDAD /* Assets.xcassets */,
+				DC469BA42681C607007BDDAD /* LaunchScreen.storyboard */,
+				DC469B9F2681C606007BDDAD /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC12D53826A867380012460F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCA169732698405B00179A20 /* AllListsViewController.swift */,
+				DC469B9D2681C606007BDDAD /* ChecklistViewController.swift */,
+				DC3E749E268F0EC7004DBCFC /* ItemDetailViewController.swift */,
+				DCA25D0A269CB0C7009BC079 /* ListDetailViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DC12D53926A867410012460F /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCA25D08269C8174009BC079 /* Checklist.swift */,
+				DC2BDBC1268DB146002A3244 /* ChecklistItem.swift */,
+				DC33538826A723F700B8DA1E /* DataModel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
 		DC469B8D2681C606007BDDAD = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +99,12 @@
 		DC469B982681C606007BDDAD /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				DC12D53926A867410012460F /* Data Models */,
+				DC12D53826A867380012460F /* View Controllers */,
+				DC12D53726A867340012460F /* Resources */,
 				DC469B992681C606007BDDAD /* AppDelegate.swift */,
-				DC469B9B2681C606007BDDAD /* SceneDelegate.swift */,
-				DC33538826A723F700B8DA1E /* DataModel.swift */,
-				DC3E749E268F0EC7004DBCFC /* ItemDetailViewController.swift */,
-				DC2BDBC1268DB146002A3244 /* ChecklistItem.swift */,
-				DC469B9D2681C606007BDDAD /* ChecklistViewController.swift */,
-				DCA169732698405B00179A20 /* AllListsViewController.swift */,
-				DCA25D0A269CB0C7009BC079 /* ListDetailViewController.swift */,
-				DCA25D08269C8174009BC079 /* Checklist.swift */,
-				DC469B9F2681C606007BDDAD /* Main.storyboard */,
-				DC469BA22681C607007BDDAD /* Assets.xcassets */,
-				DC469BA42681C607007BDDAD /* LaunchScreen.storyboard */,
 				DC469BA72681C607007BDDAD /* Info.plist */,
+				DC469B9B2681C606007BDDAD /* SceneDelegate.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";

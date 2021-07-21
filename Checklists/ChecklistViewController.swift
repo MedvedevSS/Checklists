@@ -42,7 +42,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         super.viewDidLoad()
         
         navigationItem.largeTitleDisplayMode = .never
-
         title = checklist.name
         
     }
@@ -90,7 +89,6 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
             
             let item = checklist.items[indexPath.row]
             item.checked.toggle()
-            
             configureCheckmark(for: cell, with: item)
         }
         tableView.deselectRow(at: indexPath, animated: true)
@@ -108,11 +106,9 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     // MARK: -  Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // 1
+        
         if segue.identifier == "AddItem" {
-            // 2
             let controller = segue.destination as! ItemDetailViewController
-            //3
             controller.delegate = self
         } else if segue.identifier == "EditItem" {
             let controller = segue.destination as! ItemDetailViewController
